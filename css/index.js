@@ -660,27 +660,27 @@
 //     console.log("oh no you are shit ");
 //   });
 
-// const fakePromiseColour = (newcolour, delay) => {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       document.body.style.backgroundColor = newcolour;
-//       resolve();
-//     }, delay);
-//   });
-// };
+const fakePromiseColour = (newcolour, delay) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      document.body.style.backgroundColor = newcolour;
+      resolve();
+    }, delay);
+  });
+};
 
-// const rainbow = async () => {
-//   await fakePromiseColour("red", 1000);
-//   await fakePromiseColour("blue", 1000);
-//   await fakePromiseColour("green", 1000);
-//   await fakePromiseColour("white", 1000);
-//   await fakePromiseColour("black", 1000);
-// };
+const rainbow = async () => {
+  await fakePromiseColour("red", 1000);
+  await fakePromiseColour("blue", 1000);
+  await fakePromiseColour("green", 1000);
+  await fakePromiseColour("white", 1000);
+  await fakePromiseColour("black", 1000);
+};
 
-// const printRaibow = async () => {
-//   let data = await rainbow();
-//   console.log("done");
-// };
+const printRaibow = async () => {
+  let data = await rainbow();
+  console.log("done");
+};
 // fakePromiseColour("red", 1000)
 //   .then(() => fakePromiseColour("blue", 1000))
 //   .then(() => fakePromiseColour("green", 1000))
@@ -877,9 +877,9 @@
 //   return "FEDCBA"[Math.trunc(score - 1) / 5];
 // }
 
-function getGrade(score) {
-  return "FEDCBA"[score / 5];
-}
+// function getGrade(score) {
+//   return "FEDCBA"[score / 5];
+// }
 
 // getGrade(20);
 // function getGrade(score) {
